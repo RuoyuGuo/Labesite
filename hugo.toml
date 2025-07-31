@@ -2,3 +2,54 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Deep Learning Lab'
 theme = 'FixIt'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+    [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = 'news'
+    weight = 10
+
+    [[menu.main]]
+    identifier = "members"
+    name = "Members"
+    weight = 20
+
+    [[menu.main]]
+    identifier = "faculty"
+    parent = "members"
+    name = "Faculty"
+    url = 'members/faculty/'
+    weight = 21
+
+    [[menu.main]]
+    identifier = "students"
+    parent = "members"
+    name = "Students"
+    url = 'members/students/'
+    weight = 22
+
+    [[menu.main]]
+    identifier = "alumni"
+    parent = "members"
+    name = "Alumni"
+    url = 'members/alumni/'
+    weight = 23
+
+    [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = 'research/'
+    weight = 30
+
+    [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = 'projects/'
+    weight = 40
+
