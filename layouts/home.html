@@ -1,28 +1,42 @@
-{{- define "title" -}}
-  {{- .Site.Title -}}
-  {{- if .Site.Params.indexWithSubtitle | and .Site.Params.header.subtitle.name -}}
-    {{- printf " - %v" .Site.Params.header.subtitle.name -}}
-  {{- end -}}
-{{- end -}}
+{{ define "content" }}
 
-{{- define "content" -}}
-  {{- $params := partial "function/params.html" -}}
-  {{- $profile := .Site.Params.home.profile -}}
-  {{- $posts := .Site.Params.home.posts -}}
-  <!-- this is home -->
-  <div class="page home{{ if ne $posts.enable false }} posts{{ end }}">
-    {{- /* Profile */ -}}
-    {{- if ne $profile.enable false -}}
-      {{- partial "home/profile.html" . -}}
-    {{- end -}}
+<!-- Force vertical layout using column -->
+<div style="display: flex; flex-direction: column; gap: 4rem; max-width: 1200px; margin: 2rem auto 5rem auto;">
 
-    {{- /* Content */ -}}
-    {{- if .Content -}}
-      <div class="single">
-        <div class="content" id="content">
-          {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
-        </div>
-      </div>
-    {{- end -}}
+  <!-- Row 1: Welcome Section -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; ">
+    <!-- Left Text -->
+    <div style="flex: 1; min-width: 300px;">
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.intro_paragraphs }}
+        {{ range . }}<p>{{ . }}</p>{{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Right Image -->
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      {{ with .Params.intro_image }}
+        <img src="/{{ . }}" alt="Intro image"
+             style="max-width: 100%; height: auto; border-radius: 12px;" />
+      {{ end }}
+      {{ with .Params.intro_caption }}
+        <p style="font-size: 0.9rem; color: gray;">{{ . }}</p>
+      {{ end }}
+    </div>
   </div>
-{{- end -}}
+
+  <!-- Row 2: Join Info -->
+  {{ with .Params.join_info }}
+    <div style="width: 100%;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">Join Our Lab</h2>
+      <ul style="max-width: 800px; margin: 0 auto; padding-left: 1.5rem; font-size: 1rem; line-height: 1.6; color: #444;">
+        {{ range . }}
+          {{ if . }}<li>{{ . }}</li>{{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+</div>
+
+{{ end }}
