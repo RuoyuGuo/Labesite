@@ -4,7 +4,25 @@
     <loc>http://localhost:1313/members/faculty/yang/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/research/r1/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/faculty/morri/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/r1-copy/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/r1-copy-5/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/r1-copy-4/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/r1-copy-3/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/r1-copy-2/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/news/</loc>
@@ -76,9 +94,6 @@
     <loc>http://localhost:1313/projects/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/research/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/categories/</loc>
   </url>
   <url>
@@ -86,6 +101,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/members/faculty/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/research/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/members/students/</loc>
