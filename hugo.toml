@@ -3,10 +3,16 @@ languageCode = 'en-us'
 title = 'Deep Learning Lab'
 theme = 'FixIt'
 
+[params]
+  [params.app]
+    svgFavicon = "/ai16x16.png"
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
 
 [menu]
     [[menu.main]]

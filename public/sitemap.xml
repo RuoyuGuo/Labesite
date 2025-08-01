@@ -7,6 +7,42 @@
     <loc>http://localhost:1313/members/faculty/morri/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/news/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250801/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250730/</loc>
+    <lastmod>2025-07-30T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250729/</loc>
+    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250728/</loc>
+    <lastmod>2025-07-28T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250727/</loc>
+    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250726/</loc>
+    <lastmod>2025-07-26T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/20250725/</loc>
+    <lastmod>2025-07-25T00:00:00+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/members/alumni/</loc>
   </url>
   <url>
@@ -49,9 +85,6 @@
     <loc>http://localhost:1313/members/</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/news/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/members/faculty/</loc>
   </url>
   <url>
@@ -59,8 +92,5 @@
   </url>
   <url>
     <loc>http://localhost:1313/tags/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>
