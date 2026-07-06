@@ -4,6 +4,10 @@ welcome_intro: Stay up to date with the latest events and achievements from our 
 
 
 news:
+  - date: "07/2026"
+    content: "Yang presented a webinar on hallucinations in medical VLMs at an Nvidia event, Empowering Higher Education & Robotics with NVIDIA DGX Spark."
+  - date: "06/2026"
+    content: "PhD studnet Haonan Zhong presented an invited talk on fairness in dermatology image classification at St George Hospital."
   - date: "06/2026"
     content: "Our recent work on foundation models for domain generalised semantic segmentation has been accepted in IROS 2026 (a token-level fusion method) and ECCV 2026 (a hierarchical prompt injection method)."
   - date: "05/2026"
